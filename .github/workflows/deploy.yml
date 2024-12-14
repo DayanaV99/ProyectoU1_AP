@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # Cambia esto si tu rama principal no se llama "main"
+      - master # Cambia a 'main' si tu rama principal se llama así
 
 jobs:
   build-and-deploy:
@@ -18,11 +18,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Asegúrate de usar una versión compatible con tu proyecto
+          node-version: 18 # Cambia según la versión que uses en tu proyecto
 
       # 3. Instalar dependencias
       - name: Install dependencies
-        run: npm install
+        run: npm ci # Instalación más eficiente para CI/CD
 
       # 4. Construir el proyecto
       - name: Build the project
@@ -33,4 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Carpeta de salida para React después del build
+          publish_dir: ./build # Carpeta donde CRA genera los archivos
