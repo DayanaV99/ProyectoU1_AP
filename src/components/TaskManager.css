@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #FDF3F5, #FFFFFF); /* Fondo suave */
+    margin: 0;
+    padding: 0;
+    color: #525252; /* Texto gris suave */
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #9B51E0; /* Lila vibrante */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  h6 {
+    text-align: center;
+  }
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  input,
+  textarea {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #D6BBFC; /* Lila claro */
+    border-radius: 10px;
+    background-color: #FAF5FF; /* Fondo lila muy claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #9B51E0; /* Lila vibrante */
+    box-shadow: 0 0 10px rgba(155, 81, 224, 0.5);
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .add-btn {
+    background: linear-gradient(to right, #9B51E0, #BB6BD9); /* Degradado lila fuerte */
+    color: white;
+  }
+  
+  .add-btn:hover {
+    background: linear-gradient(to right, #7E3FFC, #9B51E0);
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  thead {
+    background: #9B51E0; /* Lila vibrante */
+    color: white;
+  }
+  
+  thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #E0E0E0; /* Gris claro */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #F6F6F6; /* Gris muy claro */
+  }
+  
+  tbody td {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Edit Button */
+  .edit-btn {
+    background: linear-gradient(to right, #7E3FFC, #9B51E0); /* Degradado morado */
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background: linear-gradient(to right, #5E17EB, #7E3FFC);
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background: linear-gradient(to right, #E91E63, #F06292); /* Degradado rosa fuerte */
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background: linear-gradient(to right, #D81B60, #E91E63);
+  }
+  
+  /* Error Message */
+  .error {
+    color: #E91E63; /* Rosa fuerte */
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #FFF0F3; /* Fondo rosa claro */
+    border: 1px solid #E91E63;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
