@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Cambia esto si tu rama principal no se llama "main"
+      - master # Cambia esto si tu rama principal no se llama "main"
 
 jobs:
   build-and-deploy:
